@@ -1,0 +1,42 @@
+body {
+	background-image : url(bg_blue2.jpg);
+	font-family: Arial, sans-serif;
+}
+.jawatan-title {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 20px 0 10px 0;
+	text-align: center;
+}
+.calon-box {
+	border: 2px solid #ECEFF1;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+	width: 200px;
+	background-color: #FFFDE7;
+}
+.calon-box img {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #333;
+}
+.calon-row {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+h2{
+	font-family: verdana;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffff00;
+}
+h3{
+	font-family: verdana;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffff00;
+}

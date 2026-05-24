@@ -1,0 +1,97 @@
+<a.arrow{
+	background-image: url(arrow.png);
+	background-repeat: no-repeat;
+	background-position: 120px;
+}
+
+ul{
+	text-transform: uppercase;
+	list-style: none;
+	width: 200px;
+	margin-left: 10px;
+	padding: 0px;
+	position: absolute;
+	display: block;
+	box-shadow: 10px 10px 5px rgba(96, 96, 96, 0.8);
+}
+
+ul li{
+	border-bottom: 1px solid white;
+	background:  #ffb3b3;
+	position: relative;
+	display: block;
+}
+
+ul li a{
+	font-family: verdana;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: block;
+}
+
+ul li:hover{
+	background-color: #ffb3b3	;
+}
+
+ul li:hover > ul{
+	display: block;
+}
+
+body{
+	background-color: #ffffff; 
+}
+
+div.all{
+	width: 700px;
+	height: 550px;
+	margin: 30px auto;
+	border-radius: 15px;
+	border: 2px solid purple;
+	background-image: url(paper.jpg);
+	box-shadow: 15px 15px 6px rgba(96, 96, 96, 0.7);
+}
+
+
+h1{
+	font-family: verdana;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: orangered;
+}
+
+h2{
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	color: blueviolet;
+}
+
+a{
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: right;
+	color: white;
+
+	width: 100px;
+	padding: 10px;
+	margin-bottom: 5px;
+	border-radius: 15px 0 0 15px;
+	background-color: darked;
+	display: block;
+	text-orientation: none;
+}
+
+a:hover{
+	background-color: lightcoral;
+	background-image: url(right.png);
+	background-repeat: no-repeat;
+	background-position: 6px 6px;
+}
+

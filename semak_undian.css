@@ -1,0 +1,35 @@
+    body{
+    	background-image: url(bg_tealBlue.jpg);
+        }
+    table {
+    	border-collapse: collapse;
+    	width: 70%;
+    	margin: auto;
+    	border: 1px solid black;
+    }
+    th, td {
+    	border: 1px solid black;
+    	padding: 8px;
+    	text-align: center;
+    	vertical-align: middle;
+    	font-size: 12px;
+    }
+    th {
+    	background-color: #556B2F; /* Warna latar belakang header (hijau-perang) */
+    	color: whitesmoke;
+    	font-weight: bold;
+    	font-size: 12px;
+    }
+    tbody tr {
+    	background-color: #F5E8D0; /* Warna latar belakang baris data (beige) */
+    }
+    .candidate-info {
+    	text-align: left;
+    	display: inline-block;
+    }
+    img {
+    	display: block;
+    	margin: auto;
+    	width: 100px; /* Anggaran lebar dari imej */
+    	height: auto;
+    }

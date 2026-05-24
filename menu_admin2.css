@@ -1,0 +1,106 @@
+/* CSS untuk navbar Admin */
+body {
+    background-image: url(bg-puteri.jpg);
+    background-size: cover;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h2 {
+    color: white;
+    margin-top: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* FIXED: was 'text-shadaw' (typo) */
+}
+
+/* Container Navigasi */
+.nav {
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    position: relative;
+}
+
+/* Tombol Utama */
+.nav li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    white-space: nowrap;
+}
+
+.nav li a:hover, .dropdown:hover .dropbtn {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.dropbtn i {
+    margin-left: 8px;
+    font-size: 12px;
+    transition: transform 0.3s;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    top: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 999;
+    border-radius: 12px;
+    padding: 8px 0;
+    overflow: hidden;
+    animation: slideDown 0.3s ease;
+}
+
+.dropdown-content a {
+    color: #444;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 500;
+    transform: none !important; /* prevent inherited hover transform */
+}
+
+.dropdown-content a:hover {
+    background-color: #d1c4e9 !important;
+    color: #4527a0 !important;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn i {
+    transform: rotate(180deg);
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.show {
+    display: block !important;
+}
