@@ -7,112 +7,57 @@
   <title>Voting For Positions</title>
 
   <style>
-  	* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-      font-size: 14px;
-    }
+ /* Add this inside the <style> tags of utama.php */
 
-    body {
-  	  background-image: url(bg-puteri.jpg);
-  	  background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width:100%;
-      padding: 10px;
-    }  
+/* Make the info boxes interactive */
+.item {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.7); /* Subtle background for each box */
+    padding: 20px 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
 
-    .header {
-      width: fit-content;
-      margin: auto;
-      background: #f8dfe4;
-      padding: 15px 40px;
-      border-radius: 15px;
-      border: 2px solid #e9bcc6;
-      margin-bottom: 40px;
-    }
+.item:hover {
+    transform: translateY(-10px); /* Floats up on hover */
+    box-shadow: 0 10px 20px rgba(255, 60, 134, 0.2); /* Pink shadow */
+    background: rgba(255, 255, 255, 1);
+}
 
-    .header h1 {
-      color: #5a1730;
-      font-size: 18px;
-      text-align: center;
-    }
+.icon {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 50%;
+    background: #ffd6e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #ff3c86;
+    transition: transform 0.3s ease;
+}
 
-    .logo-section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 50px;
-      margin-top: 40px;   
-  	  margin-bottom: 30px;
-    }
+.item:hover .icon {
+    transform: scale(1.15) rotate(5deg); /* Icon pops and slightly tilts */
+}
 
-    .logo-section img {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
-    }
-
-    .title {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .title h2 {
-      color: #5a1730;
-      font-size: 30px;
-      margin-bottom: 10px;
-    }
-
-    .title p {
-      color: #ff4f9a;
-      font-size: 24px;
-      font-style: italic;
-      line-height: 1.4;
-    }
-
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
     .info-box {
-      margin-top: 30px;
-      border-radius: 20px;
-      padding: 30px;
-      display: flex;
-      justify-content: space-between;
-      text-align: center;
-      gap: 10px;
+        flex-direction: column; /* Stack boxes vertically on small screens */
+        gap: 20px;
     }
-
-    .item {
-      flex: 1;
+    
+    .logo-section {
+        gap: 20px;
     }
-
-    .item h3 {
-      color: #ff3c86;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      font-size: 12px;
+    
+    .title h2 {
+        font-size: 24px;
     }
-
-    .item p {
-      color: #333;
-      font-size: 12px;
-      line-height: 1.5;
-    }
-
-    .icon {
-      width: 60px;
-      height: 60px;
-      margin: auto;
-      border-radius: 50%;
-      background: #ffd6e5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 24px;
-      color: #ff3c86;
-    }
+}
   </style>
 </head>
 <body>

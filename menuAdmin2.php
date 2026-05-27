@@ -1,16 +1,6 @@
 <?php include('pengesahan.php'); ?>
-<!DOCTYPE html>
-<html lang="ms">
-<head>
-    <meta charset="UTF-8">
-    <title>Dashboard Pentadbir</title>
-    <!-- FIXED: <link> tags had misplaced > causing rel/href to be treated as text -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="menu_admin2.css">
-</head>
-<body>
-
-<h2 style="text-align:center;">Dashboard Pentadbir</h2>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="menu_admin2.css">
 
 <ul class="nav">
     <li class="dropdown">
@@ -20,28 +10,24 @@
             <a href="daftarCalon.php">Daftar Calon</a>
         </div>
     </li>
-
     <li class="dropdown">
         <a href="#" class="dropbtn">Senarai <i class="fas fa-chevron-down"></i></a>
         <div class="dropdown-content">
             <a href="senaraiJawatan.php">Senarai Jawatan</a>
             <a href="senaraiCalon.php">Senarai Calon</a>
             <a href="senaraiPengundi.php">Senarai Pengundi</a>
-        </div> <!-- FIXED: was <div> instead of </div> (never closed dropdown) -->
+        </div> 
     </li>
-
     <li class="dropdown">
         <a href="#" class="dropbtn">Laporan <i class="fas fa-chevron-down"></i></a>
         <div class="dropdown-content">
-            <!-- FIXED: was 'laporam_pemenang.php' (typo) -->
             <a href="laporan_pemenang.php">Keputusan ikut Jawatan</a>
             <a href="keputusan_undian.php">Keputusan Undian</a>
         </div>
     </li>
-
     <li><a href="carian_calon.php">Carian</a></li>
     <li><a href="importData.php">Import Data</a></li>
-    <li><a href="logout.php" style="background-color:#ff4d4d;" onclick="return confirm('Anda Pasti?')">Log Keluar</a></li>
+    <li><a href="logout.php" style="background-color:#ff4d4d;" onclick="return confirm('Anda Pasti log keluar?')">Log Keluar</a></li>
 </ul>
 
 <script>

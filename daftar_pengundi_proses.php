@@ -21,9 +21,9 @@ if (isset($_POST['NOKP'])) {
         exit();
     }
 
-    // Semakan panjang
-    if (strlen($nokp) < 4) {
-        echo "<script>alert('Sila masukkan 4 digit akhir no KP.');
+    // Semakan panjang (Mesti TEPAT 4 digit)
+    if (strlen($nokp) != 4) {
+        echo "<script>alert('Sila masukkan TEPAT 4 digit akhir no KP sahaja.');
               window.location='daftar_pengundi.php';</script>";
         exit();
     }

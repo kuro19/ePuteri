@@ -1,7 +1,7 @@
 <?php
+session_start(); // THIS MUST BE THE VERY FIRST THING
 include('config.php');
 include('menuPengundi.php');
-session_start(); // FIXED: was commented out — session not started means $_SESSION is empty
 
 $noKP = $_SESSION['user'];
 $nama = $_SESSION['name'];
@@ -84,7 +84,11 @@ if ($row = mysqli_fetch_array($data2)) {
         }
 
         echo "<td class='calon'>
-                <img width='150' height='150' src='" . htmlspecialchars($gambar) . "'><br><br>
+                echo "<td class='calon'>
+        <img width='150' height='150' src='gambar_calon/" . htmlspecialchars($gambar) . "' style='object-fit: cover; border-radius: 8px;'><br><br>
+        <strong>" . htmlspecialchars($namaCalon) . "</strong><br>" . htmlspecialchars($kelas) . "<br><br>
+        <input type='radio' name='IDCALON' value='" . htmlspecialchars($IDCalon) . "' required>
+      </td>";<br><br>
                 " . htmlspecialchars($namaCalon) . "<br>" . htmlspecialchars($kelas) . "<br><br>
                 <input type='radio' name='IDCALON' value='" . htmlspecialchars($IDCalon) . "' required>
               </td>";
